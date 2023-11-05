@@ -13,10 +13,12 @@ class MoleculeDataset(Dataset):
         self.test = test
         self.filename = filename
         super(MoleculeDataset, self).__init__(root, transform, pre_transform)
-        
+
+    @property    
     def raw_file_names(self):
         return self.filename
 
+    @property
     def processed_file_names(self):
         self.data = pd.read_csv(self.raw_paths[0]).reset_index()
         if self.test:
@@ -24,7 +26,6 @@ class MoleculeDataset(Dataset):
         else:
             return [f'data_{i}.pt' for i in list(self.data.index)]
         
-
     def download(self):
         pass
 
