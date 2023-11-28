@@ -38,7 +38,7 @@ def show_visualization():
 st.markdown('<div style="height: 150px;"></div>', unsafe_allow_html=True)  # Shifting by approximately 3 rows
 
 st.markdown(
-    '<a href="http://localhost:8501/" style="color: #00FA9A;">Click here to visualize</a>',
+    '<a href="http://localhost:8502/" style="color: #00FA9A;">Click here to visualize</a>',
     unsafe_allow_html=True
 )
 

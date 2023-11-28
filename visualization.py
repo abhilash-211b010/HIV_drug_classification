@@ -204,4 +204,4 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-st.markdown('<a href="http://localhost:8502/" target="_blank">Go to Home Page</a>', unsafe_allow_html=True)
+st.markdown('<a href="http://localhost:8501/" target="_blank">Go to Home Page</a>', unsafe_allow_html=True)
